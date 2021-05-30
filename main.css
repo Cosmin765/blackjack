@@ -8,6 +8,7 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  margin: 0;
 }
 
 .deck {
@@ -21,6 +22,7 @@ body {
   height: 45vw;
   border-radius: 20px;
   margin: auto;
+  margin-top: 10px;
 }
 
 .control {
@@ -28,7 +30,7 @@ body {
   justify-content: center;
   align-items: center;
   
-  padding-top: 20vh;
+  padding-top: 15vh;
 }
 
 .control .button {
@@ -48,4 +50,52 @@ body {
 .control .button:hover {
   background: rgb(82, 165, 255);
   border: 2px solid red;
+  color: blue;
+  font-weight: bold;
+}
+
+.cards-container {
+  margin-top: 10vh;
+}
+
+.cards-container .card {
+  position: absolute;
+  width: 20vw;
+  height: 30vw;
+  background-color: white;
+  margin: auto;
+  border-radius: 12px;
+  border: 2px solid black;
+  margin-left: 40vw;
+
+  transform-origin: 50% 100%;
+  transition: transform 0.5s;
+}
+
+.card .info {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.info .value {
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.info .type {
+  height: 30px;
+}
+
+.total {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  background-color: rgba(0, 255, 255, 0.6);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 10px;
 }
