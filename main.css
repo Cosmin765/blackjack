@@ -9,6 +9,7 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  user-select: none;
 }
 
 .deck {
@@ -70,6 +71,26 @@ body {
 
   transform-origin: 50% 100%;
   transition: transform 0.5s;
+  
+  transform: translateY(-45vh) scale(1.5) rotateY(180deg);
+  overflow: hidden;
+}
+
+.card .frontface {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+.card .backface {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/back.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .card .info {
